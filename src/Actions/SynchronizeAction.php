@@ -41,7 +41,7 @@ class SynchronizeAction extends Action
 
             $existingItem = LanguageLine::where('group', $groupAndKey['group'])
                 ->where('key', $groupAndKey['key'])
-                ->exist();
+                ->first();
 
             if (!$existingItem) {
                 LanguageLine::create([
