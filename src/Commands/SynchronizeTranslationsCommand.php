@@ -12,7 +12,7 @@ class SynchronizeTranslationsCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'translations:synchronize {--l|loud}';
+    protected $signature = 'translations:synchronize';
 
     /**
      * The console command description.
